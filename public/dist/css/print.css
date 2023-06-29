@@ -1,0 +1,45 @@
+
+
+@media print {
+    html { overflow: hidden; }
+    body * {
+        visibility: hidden;
+    }
+
+    @page {
+        size: auto;
+        /*size: a5;*/
+        margin-right: 0.2cm;
+        margin-left: 0.2cm;
+        margin-top: 0.2cm;
+        margin-bottom: 0.2cm;   
+    }
+   
+    #section-to-print, #section-to-print *, #section-to-print  table * {
+        visibility: visible;
+        color: #111;
+        font-weight: bold;
+    }
+    #section-to-print #print-header-section{
+        display: block !important;
+    }
+    /*#print-header-section .last-row{
+        border-bottom: 1px solid #111 !important;
+    }*/
+    #voucher a[href]:after {
+        content: none !important;
+    }
+    #section-to-print {
+
+        position: fixed;
+        left: 0;
+        top: 0.5cm;
+        overflow: hidden;
+    }
+
+    #section-to-print  table tr th, #section-to-print  table tr td{
+        border-top: 1px solid #999 !important;
+        border-bottom: 1px solid #999 !important;
+    }
+    
+}

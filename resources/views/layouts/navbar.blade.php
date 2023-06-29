@@ -1,0 +1,22 @@
+<nav id="mynavbar" class="main-header navbar navbar-expand navbar-light" style="background: #eee;padding-top: 1px;padding-bottom: 1px;color: #111 !important;font-weight: bold;">
+  <!-- Left navbar links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+    </li>
+  </ul>
+
+  <!-- Right navbar links -->
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="{{url('master-management/user/profile')}}" role="button">
+        <i class="fas fa-user"></i><span>Profile</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{url('/logout')}}" role="button">
+        <span>Logout</span>
+      </a>
+    </li>
+  </ul>
+</nav>

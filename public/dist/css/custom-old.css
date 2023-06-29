@@ -1,0 +1,222 @@
+.breadcrumb-btn {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 12px;
+}
+
+#dataTables,
+.table,
+.card {
+  font-size: 14px;
+}
+.hide-view {
+  display: none !important;
+}
+
+#family_record tr td {
+  border-top: none !important;
+}
+.sidebar .nav-item {
+  border: 1px solid white;
+}
+.filter-row .filter-header {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.footer strong {
+    margin: 10px 0;
+}
+
+.register-form label {
+  font-size: 14px !important;
+}
+
+.sidebar-nav ul li a {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+#attendance_detail_record thead tr th {
+  background-color:#17cdcc !important;
+}
+#attendance_detail_print thead tr th {
+  background-color:#17cdcc !important;
+}
+#attendance_detail_print {
+  padding: 0px;
+}
+#attendance_detail_print thead tr th, #attendance_detail_print thead tr td {
+  padding: 5px;
+}
+.total-table tr th, .total-table tr td {
+  border: 1px solid #111 !important;
+}
+
+.loading-overlay {
+    display: none;
+    background: rgba( 26, 26, 26, 0.7 );
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+}
+
+.loading-overlay-image-container {
+    display: none;
+    position: fixed;
+    z-index: 7;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+}
+
+.loading-overlay-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+table#attendance_detail_record {
+  font-family: "Fraunces", serif;
+  font-size: 115%;
+  white-space: nowrap;
+  margin: 0;
+  border: none;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+  
+}
+
+
+table#attendance_detail_record thead th {
+/*  padding: 3px;*/
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 10vw;
+  background: white;
+}
+
+table#attendance_detail_record tbody th {
+
+  background: #999 !important;
+  position: relative;
+}
+
+table#attendance_detail_record thead th.correction {
+
+  width: 15vw !important;
+  
+}
+table#attendance_detail_record thead th.date {
+
+  width: 12vw !important;
+  
+}
+table#attendance_detail_record thead th.action {
+
+  width: 5vw !important;
+  
+}
+table#attendance_detail_record td {
+  background: #fff;
+/*  padding: 4px 5px;*/
+/*  text-align: center;*/
+}
+
+table#attendance_detail_record tbody th {
+  /*font-weight: 100;
+  font-style: italic;
+  text-align: left;*/
+  position: relative;
+}
+table#attendance_detail_record thead th:first-child {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+table#attendance_detail_record tbody th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+table#attendance_detail_record tbody td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+table#attendance_detail_record tbody th {
+  position: sticky;
+  left: 0;
+  background: white;
+  z-index: 1;
+
+}
+/*fixed tbody*/
+.fixed-tbody{
+  border-collapse: collapse;
+}
+.fixed-tbody thead tr {
+  display: block;
+}
+.fixed-tbody tbody.fixed {
+  display:block;
+  width: 100%;
+  overflow-y: scroll;
+  height: 330px;
+/*  scrollbar-width: none;*/
+}
+.fixed-tbody tbody::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+}
+.fixed-tbody tbody::-webkit-scrollbar-track {
+    background: transparent;
+}
+    
+.fixed-tbody tbody::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-right: none;
+    border-left: none;
+}
+
+.fixed-tbody tbody::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+}
+
+.fixed-tbody tbody::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+}
+.fixed-tbody tbody tr {
+  display: block;
+}
+.fixed-tbody th, .fixed-tbody td {
+  width: 200px !important;
+  text-align: left;
+}
+.fixed-tbody .snum {
+  
+  width: 30px !important;
+  text-align: left;
+}
+.fixed-tbody .change-status{
+  width: 350px !important;
+  text-align: left;
+}
+.fixed-tbody .header-row{
+  width: 65% !important;
+  text-align: left;
+}
+.fixed-tbody .header-snum{
+  width: 2% !important;
+  text-align: left;
+}
+.fixed-tbody .reason-info{
+  width: 25% !important;
+  text-align: left;
+}
+/*fixed tbody*/

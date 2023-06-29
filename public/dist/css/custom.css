@@ -1,0 +1,291 @@
+.breadcrumb-btn {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 12px;
+}
+
+#dataTables,
+.table,
+.card {
+  font-size: 14px;
+}
+.hide-view {
+  display: none !important;
+}
+
+#family_record tr td {
+  border-top: none !important;
+}
+.sidebar .nav-item {
+  border: 1px solid white;
+}
+.filter-row .filter-header {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.footer strong {
+    margin: 10px 0;
+}
+
+.register-form label {
+  font-size: 14px !important;
+}
+
+.sidebar-nav ul li a {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.table-color thead tr th {
+  background-color:#17cdcc !important;
+}
+#attendance_detail_record thead tr th {
+  background-color:#17cdcc !important;
+}
+#attendance_detail_print thead tr th {
+  background-color:#17cdcc !important;
+}
+#attendance_detail_print {
+  padding: 0px;
+}
+#attendance_detail_print thead tr th, #attendance_detail_print thead tr td {
+  padding: 5px;
+}
+.total-table tr th, .total-table tr td {
+  border: 1px solid #111 !important;
+}
+
+.loading-overlay {
+    display: none;
+    background: rgba( 26, 26, 26, 0.7 );
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+}
+
+.loading-overlay-image-container {
+    display: none;
+    position: fixed;
+    z-index: 7;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+}
+
+.loading-overlay-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+
+
+/*fixed tbody*/
+.fixed-tbody{
+  border-collapse: collapse;
+}
+.fixed-tbody thead tr {
+  display: block;
+}
+.fixed-tbody tbody.fixed {
+  display:block;
+  width: 100%;
+  overflow-y: scroll;
+  height: 330px;
+/*  scrollbar-width: none;*/
+}
+.fixed-tbody tbody::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+}
+.fixed-tbody tbody::-webkit-scrollbar-track {
+    background: transparent;
+}
+    
+.fixed-tbody tbody::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-right: none;
+    border-left: none;
+}
+
+.fixed-tbody tbody::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+}
+
+.fixed-tbody tbody::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+}
+.fixed-tbody tbody tr {
+  display: block;
+}
+.fixed-tbody th, .fixed-tbody td {
+  width: 200px !important;
+  text-align: left;
+}
+.fixed-tbody .snum {
+  
+  width: 30px !important;
+  text-align: left;
+}
+.fixed-tbody .change-status{
+  width: 350px !important;
+  text-align: left;
+}
+.fixed-tbody .header-row{
+  width: 35% !important;
+  text-align: left;
+}
+.fixed-tbody .header-snum{
+  width: 2% !important;
+  text-align: left;
+}
+.fixed-tbody .reason-info{
+  width: 40% !important;
+  text-align: left;
+}
+.fixed-tbody .status-info{
+  width: 15% !important;
+  text-align: left;
+}
+/*fixed tbody*/
+/*attendance detail view*/
+    html {
+      box-sizing: border-box;
+    }
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+    
+    .table-scroll {
+      position: relative;
+      width:100%;
+      z-index: 1;
+      margin: auto;
+      overflow: auto;
+      height: 450px;
+    }
+    .table-scroll > table {
+      width: 100%;
+      min-width: 1280px;
+      margin: auto;
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+    .table-wrap {
+      position: relative;
+    }
+    .table-scroll th,
+    .table-scroll td {
+      padding: 5px 10px;
+      border: 1px solid #999;
+      background: #fff;
+      vertical-align: top;
+    }
+    .table-scroll thead th {
+      background: #17cdcc;
+      color: #111;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 5;
+    }
+    /* safari and ios need the tfoot itself to be position:sticky also */
+    .table-scroll tfoot,
+    .table-scroll tfoot th,
+    .table-scroll tfoot td {
+      position: -webkit-sticky;
+      position: sticky;
+      bottom: 0;
+      background: #666;
+      color: #fff;
+      z-index:4;
+    }
+
+
+    .table-scroll th:first-child {
+      position: -webkit-sticky;
+      position: sticky;
+      left: 0;
+      z-index: 2;
+      background: #17cdcc;
+    }
+    .table-scroll thead th:first-child,
+    .table-scroll tfoot th:first-child {
+      z-index: 6;
+    }
+
+    .user-name td, .user-name th {
+      background: #ccc !important;
+      z-index: 0;
+    }
+    .employee_name {
+      border-right: 1px solid #ccc !important;
+    }
+/*attendance detail view*/
+
+/*reduce time picker size in attendance detail view*/
+#main-table  .timepicker-picker  table td  a span,
+#main-table  .timepicker-picker  table td,
+#main-table  .timepicker-picker  table td  span
+{
+  border: none !important;
+}
+
+/*reduce time picker size in attendance detail view*/
+[data-title]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.5s;
+  visibility: visible;
+}
+[data-title]:after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: -1.6em;
+  /*left: 100%;*/
+  padding: 4px 4px 4px 8px;
+  color: #666;
+  white-space: nowrap;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 4px #666;
+  -webkit-box-shadow: 0px 0px 4px #666;
+  box-shadow: 0px 0px 4px #666;
+  background-image: -moz-linear-gradient(top, #f0eded, #bfbdbd);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f0eded), color-stop(1, #bfbdbd));
+  background-image: -webkit-linear-gradient(top, #f0eded, #bfbdbd);
+  background-image: -moz-linear-gradient(top, #f0eded, #bfbdbd);
+  background-image: -ms-linear-gradient(top, #f0eded, #bfbdbd);
+  background-image: -o-linear-gradient(top, #f0eded, #bfbdbd);
+  opacity: 0;
+  z-index: 99999;
+  visibility: hidden;
+}
+[data-title] {
+  position: relative;
+}
+/*salary */
+table.text-border tbody tr td input {
+  border: 1px solid #333;
+}
+table.rs-text-border tbody tr td input {
+  border: 1px solid #333;
+  width: 80px;
+}
+/*salary */
+/*sub treeview*/
+.nav-sub-treeview li {
+  padding-left: 0.5rem !important;
+}
+/*sub treeview*/
+
+/*tfoot border top*/
+.footer-border-top th, .footer-border-top td {
+  border-top: 2px solid #111 !important;
+}
+/*tfoot border top*/
